@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/certificado/web/en/categories/</loc>
+    <loc>http://web.infenlaces.com/certificado/web/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/certificado/web/categories/"
+                href="http://web.infenlaces.com/certificado/web/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/certificado/web/fr/categories/"
+                href="http://web.infenlaces.com/certificado/web/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/certificado/web/en/categories/"
+                href="http://web.infenlaces.com/certificado/web/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/certificado/web/en/</loc>
+    <loc>http://web.infenlaces.com/certificado/web/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/certificado/web/"
+                href="http://web.infenlaces.com/certificado/web/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/certificado/web/fr/"
+                href="http://web.infenlaces.com/certificado/web/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/certificado/web/en/"
+                href="http://web.infenlaces.com/certificado/web/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/certificado/web/en/tags/</loc>
+    <loc>http://web.infenlaces.com/certificado/web/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/certificado/web/tags/"
+                href="http://web.infenlaces.com/certificado/web/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/certificado/web/fr/tags/"
+                href="http://web.infenlaces.com/certificado/web/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/certificado/web/en/tags/"
+                href="http://web.infenlaces.com/certificado/web/en/tags/"
                 />
   </url>
 </urlset>
