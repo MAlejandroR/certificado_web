@@ -1,6 +1,6 @@
 #baseURL = 'http://proyectosdwa.es/manuel'
-#baseURL = 'http://web.infenlaces.com/hugo/'
-baseURL = 'http://localhost:1313/'
+baseURL = 'http://web.infenlaces.com/certificado/web'
+#baseURL = 'http://localhost:1313/'
 
 languageCode = 'es-es'
 title = 'Conceptos sobre desarrollo web'
