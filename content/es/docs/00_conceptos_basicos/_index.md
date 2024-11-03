@@ -1,6 +1,6 @@
 ---
-title: "Conceptos"
-linkTitle: "Conceptos"
+title: "Ideas básicas de redes"
+linkTitle: "Redes"
 weight: 10
 icon: fa-solid fa-network-wired
 ---
