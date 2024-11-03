@@ -3,8 +3,7 @@ baseURL = 'https://web.infenlaces.com/certificado/web/'
 #baseURL = 'http://localhost:1313/'
 
 languageCode = 'es-es'
-title = 'Conceptos sobre desarrollo web'
-
+title = 'Certificado de profesionalidad "Desarrollo de aplicaciones con tecnologías web" '
 
 
 # Para poder cargar emogin https://www.webfx.com/tools/emoji-cheat-sheet/

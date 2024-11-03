@@ -1,7 +1,7 @@
 ---
 title: "Ideas básicas de redes"
 linkTitle: "Redes"
-weight: 10
+weight: 20
 icon: fa-solid fa-network-wired
 ---
 
