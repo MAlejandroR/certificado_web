@@ -6,7 +6,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/certificado/web/categories/"
+                href="http://localhost:1313/certificado/web/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -23,7 +23,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/certificado/web/"
+                href="http://localhost:1313/certificado/web/es/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -40,7 +40,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/certificado/web/tags/"
+                href="http://localhost:1313/certificado/web/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"

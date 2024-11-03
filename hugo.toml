@@ -15,9 +15,9 @@ enableEmoji = true
 gcs_engine_id = "e0a656d2baca94"
 
 #Language settings   content dir
-contentDir = "content/es"
+#contentDir = "content/docs/es"
 defaultContentLanguage = "es"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
