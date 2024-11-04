@@ -3,7 +3,7 @@ baseURL = 'https://web.infenlaces.com/certificado/web/'
 #baseURL = 'http://localhost:1313/'
 
 languageCode = 'es-es'
-title = 'Certificado de profesionalidad "Desarrollo de aplicaciones con tecnologías web" '
+title = 'Certificado de profesionalidad: "Desarrollo de aplicaciones con tecnologías web" '
 
 
 # Para poder cargar emogin https://www.webfx.com/tools/emoji-cheat-sheet/
@@ -70,7 +70,7 @@ languageName = "English"
 contentDir = "content/en"
 
 [languages.es]
-title = "Desarrollo web"
+title = "Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web"
 languageName = "Español"
 contentDir = "content/es"
 
@@ -87,6 +87,7 @@ privacy_policy = "https://policies.google.com/privacy"
 
 logo= "/images/logo.png"
 [params.ui]
+showLightDarkModeMenu = true
 sidebar_menu_compact = true
 ul_show = 1
 sidebar_menu_foldable = true
@@ -95,10 +96,10 @@ sidebar_menu_foldable = true
 [params.links]
 # # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
-name = "Correo del usuario"
-url = "https://example.org/mail"
+name = "manuelromeromiguel@gmail.com"
+url = "mailto:manuelromeromiguel@gmail.com"
 icon = "fa fa-envelope"
-desc = "Discussion and help from your fellow users"
+desc = "Cualquier retroalimentación será bien recibida"
 # [[params.links.user]]
 # 	name ="Twitter"
 # 	url = "https://example.org/twitter"
