@@ -50,13 +50,13 @@ Recuerda que el uso seguro de Apache es esencial para proteger la infraestructur
 Ponamos la siguiente analogía:
 Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman "Manuel" y adopta una actitud profesional y seria. En casa o con amigos, le llaman "Manolo" y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.
 
-{{< imgproc manuel-manolo Fill "400x450" >}}
+{{< imgproc manuel-manolo Fill "400x400" >}}
 
 {{< /imgproc >}}
 
 De forma similar, en Apache, {{< color >}} un Virtual Host permite que el mismo servidor web responda de manera distinta según el nombre de dominio o dirección con la que se le acceda {{< /color >}}.
 
-Siguiendo con la metáfora, es como si fuera “Manuel” en un contexto y “Manolo” en otro.
+Siguiendo con la metáfora, es como si fuera **Manuel** en un contexto y **Manolo** en otro.
 
 Con {{< color >}} Virtual Hosts {{< /color >}}, Apache puede manejar varios sitios web en un solo servidor, mostrando diferentes contenidos o configuraciones según el dominio que se utilice.
 
@@ -66,6 +66,12 @@ Los ficheros de configuración de Apache están en `/etc/apache2`. En la imagen 
 {{< imgproc ficheros_configuracion_apache Fill "805x712" >}}
 
 {{< /imgproc >}}
+Observa los comandos utilizados
+{{< highlight php "linenos=table, hl_lines=1" >}}
+cd #change directory para cambiar de directorio
+pwd #print work directory ver el directorio actual de trabajo
+tree -L 1 # ver el contenido de un directorio con nivel 1 de profundidad con formato arbolescente. nivel 1 es no mostrar los subdirectorios
+{{< / highlight >}}
 La configuración de los {{< color >}} sitios web {{< /color >}} está bajo los directorios {{< color >}} sites-available {{< /color >}} y {{< color >}} sites-enabled {{< /color >}}.
 
 * Después, para  actívalo en {{< color >}} sites-enabled {{< /color >}} usando el comando  {{< color >}} a2ensite nombre_sitio {{< /color >}}. Este comando crea un enlace simbólico que permite poner el sitio en funcionamiento.
@@ -82,8 +88,8 @@ Este archivo permite asignar nombres personalizados a direcciones IP en tu red l
 Por ejemplo, puedes añadir las siguientes líneas al archivo `hosts` para asociar los dominios locales a `localhost`:
 
 {{< highlight bash "linenos=table, hl_lines=1" >}}
-127.0.0.1 www.informatica.com informatica.com
-127.0.0.1 www.musica.com musica.com
+127.0.0.1 www.informatica.com 
+127.0.0.1 www.musica.com 
 {{< / highlight >}}
 
 Una vez que hayas agregado el nombre en {{< color >}} hosts {{< /color >}}, puedes probar que funciona ejecutando un {{< color >}} `ping` {{< /color >}} al nombre que has configurado, como por ejemplo:
@@ -115,81 +121,3 @@ sudo service apache2 restart
 
 
  
-{{% pageinfo %}}
-#### Practicando
-Creamos en nuestro servidor web, dos sitios virtuales o virtual host, llamados www.informatica.com y www.musica.com
-Cada uno de ellos van a tener esta peculiaridad de comportameiento y es que informatica.com va a ir a buscar los recursos a la carpeta /var/www/informatica, y www.muscia.com, a /var/www/musica
-
-{{% /pageinfo %}}
-
-Para configurar dos sitios en Apache, vamos a crear dos archivos de configuración en `sites-available` y luego activarlos.
-
-A continuación, encontrarás el código de ejemplo para cada archivo de configuración.
-
-### Configuración para **www.informatica.com**
-
-{{< highlight bash "linenos=table, hl_lines=1" >}}
-<VirtualHost *:80>
-{{< color >}}ServerName www.informatica.com{{< /color >}}
-{{< color >}}ServerAlias informatica.com{{< /color >}}
-{{< color >}}DocumentRoot /var/www/informatica{{< /color >}}
-
-    ErrorLog ${APACHE_LOG_DIR}/informatica_error.log
-    CustomLog ${APACHE_LOG_DIR}/informatica_access.log combined
-</VirtualHost>
-{{< / highlight >}}
-
-### Configuración para **www.musica.com**
-
-{{< highlight bash "linenos=table, hl_lines=1" >}}
-<VirtualHost *:80>
-{{< color >}}ServerName www.musica.com{{< /color >}}
-{{< color >}}ServerAlias musica.com{{< /color >}}
-{{< color >}}DocumentRoot /var/www/musica{{< /color >}}
-
-    ErrorLog ${APACHE_LOG_DIR}/musica_error.log
-    CustomLog ${APACHE_LOG_DIR}/musica_access.log combined
-</VirtualHost>
-{{< / highlight >}}
-
-### Modificación del archivo hosts
-
-Para realizar pruebas en local, añade los siguientes dominios al archivo `hosts` en tu equipo. En Ubuntu, el archivo se encuentra en `/etc/hosts`; en Windows, en `c:\windows\system32\drivers\etc\hosts`. Añade estas líneas:
-
-{{< highlight bash "linenos=table, hl_lines=1" >}}
-127.0.0.1 www.informatica.com informatica.com
-127.0.0.1 www.musica.com musica.com
-{{< / highlight >}}
-
-Luego, puedes probar que los dominios responden ejecutando:
-
-{{< highlight bash "linenos=table, hl_lines=1" >}}
-ping www.informatica.com
-ping www.musica.com
-{{< / highlight >}}
-
-### Activación de los sitios
-
-Una vez que hayas creado estos archivos de configuración en `sites-available`, debes activarlos usando los siguientes comandos:
-
-{{< highlight bash "linenos=table, hl_lines=1" >}}
-sudo a2ensite informatica.conf
-sudo a2ensite musica.conf
-sudo systemctl reload apache2
-{{< / highlight >}}
-
-Esto creará los enlaces simbólicos en `sites-enabled` y recargará Apache para aplicar la configuración.
-
----
-
-Este guión guía paso a paso la configuración de dos sitios en Apache usando Virtual Hosts. Asegúrate de tener las carpetas `/var/www/informatica` y `/var/www/musica` creadas y con el contenido que quieres servir antes de activar los sitios.
-
-
-{{< color >}}  {{< /color >}}
-### Parámetros a configurar
-
-#### Creando el directorio
-
-### Como crear distintos nombres para mi equipo
-
-
