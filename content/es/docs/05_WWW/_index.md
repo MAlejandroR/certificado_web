@@ -1,8 +1,8 @@
 ---
 title: "Instalaciones"
 linkTitle: "Creando arquitectura"
-weight: 60
-icon: fa fa-layer-group
+weight: 50
+icon: "fa fa-layer-group"
 ---
 {{< objetivos sub_title="Intenet una red de tipo TCP/IP" >}}
 Realizar instalaciones

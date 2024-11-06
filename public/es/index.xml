@@ -2,17 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Certificado de profesionalidad Desarrollo Web on Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web</title>
-    <link>http://localhost:1313/es/</link>
+    <link>http://localhost:1313/certificado/web/es/</link>
     <description>Recent content in Certificado de profesionalidad Desarrollo Web on Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Oct 2024 07:04:49 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/certificado/web/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache</title>
+      <link>http://localhost:1313/certificado/web/es/docs/06_instalaciones/apache/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/certificado/web/es/docs/06_instalaciones/apache/</guid>
+      <description>&lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 328px&#34;&gt;&#xA;&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:1313/certificado/web/certificado/web/es/docs/06_instalaciones/apache/apache_hu1649457868340022384.jpeg&#34; width=&#34;318&#34; height=&#34;159&#34;&gt;&#xA;&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;&#xA;&lt;p class=&#34;card-text&#34;&gt;&#xA;&#xA;&#xA;Servidor Web&#xA;&#xA;&lt;/p&gt;&#xA;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h4 id=&#34;heading&#34;&gt;&lt;/h4&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;servidor-apache-y-su-funcionamiento-modular&#34;&gt;Servidor Apache y su funcionamiento modular&lt;/h3&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 940px&#34;&gt;&#xA;&lt;img class=&#34;card-img-top&#34; src=&#34;http://localhost:1313/certificado/web/certificado/web/es/docs/06_instalaciones/apache/apache2_hu11909948979439000136.png&#34; width=&#34;930&#34; height=&#34;454&#34;&gt;&#xA;&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;&#xA;&lt;p class=&#34;card-text&#34;&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;/p&gt;&#xA;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.&lt;/p&gt;&#xA;&lt;p&gt;Cada uno de estos módulos (como &lt;strong&gt;PHP&lt;/strong&gt;, &lt;strong&gt;MySQL&lt;/strong&gt;, &lt;strong&gt;XML&lt;/strong&gt;, entre otros) añade funcionalidades específicas y se conecta al &lt;strong&gt;núcleo de Apache&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>practicando</title>
+      <link>http://localhost:1313/certificado/web/es/docs/06_instalaciones/apache/practica/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/certificado/web/es/docs/06_instalaciones/apache/practica/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;&#xA;&lt;h4 id=&#34;practicando&#34;&gt;Practicando&lt;/h4&gt;&#xA;&lt;p&gt;:smyle:&#xA;Creamos en nuestro servidor web, dos sitios virtuales o virtual host, llamados &lt;a href=&#34;https://www.informatica.com&#34;&gt;www.informatica.com&lt;/a&gt; y &lt;a href=&#34;https://www.musica.com&#34;&gt;www.musica.com&lt;/a&gt;&#xA;Cada uno de ellos van a tener esta peculiaridad de comportameiento y es que informatica.com va a ir a buscar los recursos a la carpeta /var/www/informatica, y &lt;a href=&#34;https://www.muscia.com&#34;&gt;www.muscia.com&lt;/a&gt;, a /var/www/musica&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Para configurar dos sitios en Apache, vamos a crear dos archivos de configuración en &lt;code&gt;sites-available&lt;/code&gt; y luego activarlos.&lt;/p&gt;&#xA;&lt;p&gt;A continuación, encontrarás el código de ejemplo para cada archivo de configuración.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Search Results</title>
-      <link>http://localhost:1313/es/search/</link>
+      <link>http://localhost:1313/certificado/web/es/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/es/search/</guid>
+      <guid>http://localhost:1313/certificado/web/es/search/</guid>
       <description></description>
     </item>
   </channel>

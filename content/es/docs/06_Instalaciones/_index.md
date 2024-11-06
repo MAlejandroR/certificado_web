@@ -3,7 +3,7 @@ title = 'Instalación'
 date = 2024-10-15T07:04:49+02:00
 draft = false
 icon = "fas fa-download"
-weight = 20
+weight = 60
 +++
 
 ### Herramientas y aplicaciones necesarias
@@ -85,7 +85,11 @@ Abre el panel de control de XAMPP y asegúrate de iniciar Apache.
 Abre tu navegador y visita `http://localhost/`. Deberías ver la página de bienvenida de XAMPP.
 
 ### Creación de docker 
-
+{{< alert title="Warning" color="warning" >}}
+Esta tecnología la emplearemos más tarde
+Cuando la veáis en el módulo de despliegue 
+Pero la dejamos aquí, para recuperarla en su momento
+{{< /alert >}}
 * Es esta la solución que vamos a utilizar.
 * Para ello crearemos un {{< color >}} docker-compose.yaml {{< /color >}}, que nos levante un servicio con php y apache2.
 * Por si queremos realizar modificaciones sobre la imagen original, la imagen la vamos a crear a patir de un {{< color >}} Dockerfile {{< /color >}}
@@ -137,3 +141,34 @@ La imagen de la estructura la podríamos organizar de la siguiente manera
 {{< imgproc estructura_docker Fill "504x297" >}}
 
 {{< /imgproc >}}
+
+## Apache
+# Servidor Apache y su funcionamiento modular
+{{< imgproc apache2 Fill "930x454" >}}
+
+{{< /imgproc >}}
+Como se muestra en la imagen, Apache funciona mediante un sistema de módulos. Cada uno de estos módulos (como **PHP**, **MySQL**, **XML**, entre otros) añade funcionalidades específicas y se conecta al **núcleo de Apache**. Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.
+
+Es importante recordar que, al instalar Apache, se abre una "puerta" en el sistema hacia redes externas, lo que puede representar una exposición al exterior. Mantener activos solo los módulos necesarios reduce esta exposición y ayuda a mejorar la seguridad del servidor.
+
+## Consideraciones de seguridad
+
+Cuando instalas y configuras Apache en tu sistema, estás abriendo una "puerta" que permite el acceso desde redes externas. Esto significa que, en cierta medida, tu sistema está expuesto al exterior, lo que podría representar un riesgo de seguridad si no se toman las precauciones adecuadas.
+
+Para minimizar esta exposición, es importante:
+- **Mantener actualizados** tanto Apache como sus módulos.
+- **Configurar adecuadamente** los permisos y accesos, limitando el acceso a solo aquellos que necesiten interactuar con el servidor.
+- **Deshabilitar módulos innecesarios**, ya que cada módulo adicional aumenta las posibles vulnerabilidades.
+
+Recuerda que el uso seguro de Apache es esencial para proteger la infraestructura de red y los datos alojados en el servidor.
+
+## Consideraciones de seguridad
+
+Cuando instalas y configuras Apache en tu sistema, estás abriendo una "puerta" que permite el acceso desde redes externas. Esto significa que, en cierta medida, tu sistema está expuesto al exterior, lo que podría representar un riesgo de seguridad si no se toman las precauciones adecuadas.
+
+Para minimizar esta exposición, es importante:
+- **Mantener actualizados** tanto Apache como sus módulos.
+- **Configurar adecuadamente** los permisos y accesos, limitando el acceso a solo aquellos que necesiten interactuar con el servidor.
+- **Deshabilitar módulos innecesarios**, ya que cada módulo adicional aumenta las posibles vulnerabilidades.
+
+Recuerda que el uso seguro de Apache es esencial para proteger la infraestructura de red y los datos alojados en el servidor.
