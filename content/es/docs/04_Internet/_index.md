@@ -3,6 +3,7 @@ title: "Internet"
 linkTitle: "Internet"
 weight: 40
 icon: fas fa-globe
+draft: true
 ---
 {{< objetivos sub_title="Intenet una red de tipo TCP/IP" >}}
 Historia de internet
