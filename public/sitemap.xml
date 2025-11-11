@@ -2,19 +2,19 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>http://localhost:35375/certificado/web/es/sitemap.xml</loc>
+    <loc>http://localhost:33395/certificado/web/es/sitemap.xml</loc>
     
       <lastmod>2024-10-15T07:04:49+02:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>http://localhost:35375/certificado/web/en/sitemap.xml</loc>
+    <loc>http://localhost:33395/certificado/web/en/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>http://localhost:35375/certificado/web/fr/sitemap.xml</loc>
+    <loc>http://localhost:33395/certificado/web/fr/sitemap.xml</loc>
     
   </sitemap>
   

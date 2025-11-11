@@ -1,0 +1,737 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/certificado/web/livereload.js?mindelay=10&amp;v=2&amp;port=33395&amp;path=certificado/web/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:33395/certificado/web/es/docs/05_arquitectura/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/certificado/web/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/certificado/web/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-192x192.png" sizes="192x192">
+
+<title>Instalaciones | Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web</title>
+
+
+<meta property="og:url" content="http://localhost:33395/certificado/web/es/docs/05_arquitectura/">
+  <meta property="og:site_name" content="Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web">
+  <meta property="og:title" content="Instalaciones">
+  <meta property="og:description" content="Objetivos Intenet una red de tipo TCP/IP Entender la arquitectura de una aplicación web Componentes que intervienen Diferencia entre el front y el back ¿Qué es la Arquitectura Web? El objetivo de la arquitectura web es construir una aplicación que funcione en un entorno web.
+Como toda construcción, implica planificar, diseñar y construir utilizando herramientas y materiales adecuados.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Instalaciones">
+  <meta itemprop="description" content="Objetivos Intenet una red de tipo TCP/IP Entender la arquitectura de una aplicación web Componentes que intervienen Diferencia entre el front y el back ¿Qué es la Arquitectura Web? El objetivo de la arquitectura web es construir una aplicación que funcione en un entorno web.
+Como toda construcción, implica planificar, diseñar y construir utilizando herramientas y materiales adecuados.">
+  <meta itemprop="wordCount" content="1166">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Instalaciones">
+  <meta name="twitter:description" content="Objetivos Intenet una red de tipo TCP/IP Entender la arquitectura de una aplicación web Componentes que intervienen Diferencia entre el front y el back ¿Qué es la Arquitectura Web? El objetivo de la arquitectura web es construir una aplicación que funcione en un entorno web.
+Como toda construcción, implica planificar, diseñar y construir utilizando herramientas y materiales adecuados.">
+
+
+<link href="/certificado/web/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand"
+     href="https://web.infenlaces.com/certificado"><span class="navbar-brand__logo navbar-logo">
+    <img src="/certificado/web/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/certificado/web/en/">English</a></li>
+    <li><a class="dropdown-item" href="/certificado/web/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/certificado/web/en/">English</a></li>
+    <li><a class="dropdown-item" href="/certificado/web/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-certificadowebesdocs-li">
+  <a href="/certificado/web/es/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-certificadowebesdocs"><i class="code-web_old"></i><span class="">La web_old y www</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs01_conceptos_generales-li">
+  <input type="checkbox" id="m-certificadowebesdocs01_conceptos_generales-check"/>
+  <label for="m-certificadowebesdocs01_conceptos_generales-check"><a href="/certificado/web/es/docs/01_conceptos_generales/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs01_conceptos_generales"><i class="fas fa-book"></i><span class="">Introducción</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs02_conceptos_basicos-li">
+  <input type="checkbox" id="m-certificadowebesdocs02_conceptos_basicos-check"/>
+  <label for="m-certificadowebesdocs02_conceptos_basicos-check"><a href="/certificado/web/es/docs/02_conceptos_basicos/" title="Ideas básicas de redes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs02_conceptos_basicos"><i class="fa-solid fa-network-wired"></i><span class="">Redes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs03_osi-li">
+  <input type="checkbox" id="m-certificadowebesdocs03_osi-check"/>
+  <label for="m-certificadowebesdocs03_osi-check"><a href="/certificado/web/es/docs/03_osi/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs03_osi"><i class="fas fa-comments"></i><span class="">Modelo OSI</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-certificadowebesdocs05_arquitectura-li">
+  <input type="checkbox" id="m-certificadowebesdocs05_arquitectura-check" checked/>
+  <label for="m-certificadowebesdocs05_arquitectura-check"><a href="/certificado/web/es/docs/05_arquitectura/" title="Instalaciones" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs05_arquitectura"><i class="fa-solid fa-diagram-project"></i><span class="td-sidebar-nav-active-item">Arquitectura</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-certificadowebesdocs06_instalaciones-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalaciones-check"/>
+  <label for="m-certificadowebesdocs06_instalaciones-check"><a href="/certificado/web/es/docs/06_instalaciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalaciones"><i class="fas fa-download"></i><span class="">Instalación</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-certificadowebesdocs06_instalacionesapache-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalacionesapache-check"/>
+  <label for="m-certificadowebesdocs06_instalacionesapache-check"><a href="/certificado/web/es/docs/06_instalaciones/apache/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalacionesapache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs06_instalacionesapachepractica-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalacionesapachepractica-check"/>
+  <label for="m-certificadowebesdocs06_instalacionesapachepractica-check"><a href="/certificado/web/es/docs/06_instalaciones/apache/practica/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalacionesapachepractica"><i class="fas fa-chalkboard-teacher"></i><span class="">practicando</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-es-la-arquitectura-web">¿Qué es la Arquitectura Web?</a>
+      <ul>
+        <li><a href="#-definición">🔹 Definición</a></li>
+      </ul>
+    </li>
+    <li><a href="#-arquitectura-construyendo-los-planos">🧩 Arquitectura: construyendo los planos</a></li>
+    <li><a href="#componentes-principales-de-una-aplicación-web">Componentes principales de una aplicación web</a></li>
+    <li><a href="#diferencia-entre-cliente-frontend-y-servidor-backend">Diferencia entre Cliente (Frontend) y Servidor (Backend)</a>
+      <ul>
+        <li><a href="#-frontend-lado-del-cliente">🖥️ Frontend (lado del cliente)</a></li>
+        <li><a href="#-backend-lado-del-servidor">⚙️ Backend (lado del servidor)</a></li>
+      </ul>
+    </li>
+    <li><a href="#una-metáfora-el-restaurante-web">Una metáfora: el restaurante web</a></li>
+    <li><a href="#-siguiendo-con-la-metáfora">🍳 Siguiendo con la metáfora</a></li>
+    <li><a href="#conclusión">Conclusión</a>
+      <ul>
+        <li><a href="#-diagrama-del-proceso-de-carga-de-una-página-web">🌐 Diagrama del proceso de carga de una página web</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/certificado/web/es/docs/">La web_old y www</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Arquitectura</li>
+  </ol>
+</nav>
+<div class="td-content">
+	<h1>Instalaciones</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Intenet una red de tipo TCP/IP</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Entender la arquitectura de una aplicación web</li>
+            
+            <li>Componentes que intervienen</li>
+            
+            <li>Diferencia entre el front y el back</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<h2 id="qué-es-la-arquitectura-web">¿Qué es la Arquitectura Web?</h2>
+<p>El objetivo de la arquitectura web es <strong>construir una aplicación que funcione en un entorno web</strong>.<br>
+Como toda construcción, implica <strong>planificar, diseñar y construir</strong> utilizando herramientas y materiales adecuados.</p>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Planificar y analizar, diseñar y construir
+
+
+</span>
+</strong>
+ el producto final.</li>
+<li>Usar materiales o 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    herramientas
+
+
+</span>
+</strong>
+ adecuadas.</li>
+<li>Trabajar con distintos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    roles profesionales
+
+
+</span>
+</strong>
+: desarrolladores, diseñadores, administradores de sistemas.</li>
+</ol>
+<hr>
+<h3 id="-definición">🔹 Definición</h3>
+<blockquote>
+<p>La <strong>arquitectura web</strong> <em>define la estructura y la forma en que se organizan los diferentes componentes de una aplicación que funciona en un entorno web</em>.<br>
+Como en la construcción de un edificio, necesitamos:</p>
+<ul>
+<li><strong>Planos</strong> → diseño</li>
+<li><strong>Materiales</strong> → tecnologías</li>
+<li><strong>Profesionales</strong> → desarrolladores, diseñadores, administradores de sistemas</li>
+</ul></blockquote>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Nota</h4>
+
+    Al principio del proyecto, hay que decidir qué <strong>tecnologías</strong> se van a utilizar.<br>
+👉 Es como elegir los materiales y herramientas antes de construir un edificio.
+
+</div>
+
+<hr>
+<h2 id="-arquitectura-construyendo-los-planos">🧩 Arquitectura: construyendo los planos</h2>
+<div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 170px">
+<img class="card-img-top" src="/certificado/web/es/docs/05_arquitectura/ArquitecturaWeb1_hu_57285be15f5bcef1.jpg" width="160" height="120">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Planificando.
+
+</p>
+</figcaption>
+</figure>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 180px">
+<img class="card-img-top" src="/certificado/web/es/docs/05_arquitectura/ArquitecturaWeb2_hu_48bbc59a20ffcb33.jpg" width="170" height="120">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Herramientas.
+
+</p>
+</figcaption>
+</figure>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 200px">
+<img class="card-img-top" src="/certificado/web/es/docs/05_arquitectura/ArquitecturaWeb3_hu_52bf2bc370afde2e.png" width="190" height="90">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Roles profesionales.
+
+</p>
+</figcaption>
+</figure>
+
+</div>
+---
+<h2 id="componentes-principales-de-una-aplicación-web">Componentes principales de una aplicación web</h2>
+<ol>
+<li>
+<p><strong>Servidor web</strong> → recibe las peticiones del cliente y devuelve una respuesta HTTP.<br>
+<em>Ejemplo: Apache, Nginx.</em></p>
+</li>
+<li>
+<p><strong>Servidor de bases de datos</strong> → gestiona la información.<br>
+<em>Ejemplo: MySQL, PostgreSQL, MongoDB.</em></p>
+</li>
+<li>
+<p><strong>Módulo de ejecución en el servidor</strong> → interpreta código dinámico.<br>
+<em>Ejemplo: PHP, Node.js, Python.</em></p>
+</li>
+<li>
+<p><strong>Cliente web</strong> → interpreta HTML, CSS y JavaScript.<br>
+<em>Ejemplo: navegadores.</em></p>
+</li>
+<li>
+<p><strong>Lenguajes de programación</strong> → construyen tanto la parte visible (frontend) como la lógica (backend).</p>
+</li>
+</ol>
+<hr>
+<h2 id="diferencia-entre-cliente-frontend-y-servidor-backend">Diferencia entre Cliente (Frontend) y Servidor (Backend)</h2>
+<h3 id="-frontend-lado-del-cliente">🖥️ Frontend (lado del cliente)</h3>
+<ul>
+<li>Es la parte visible de la aplicación, con la que el usuario interactúa desde su navegador.</li>
+<li>Incluye <strong>HTML</strong> (estructura), <strong>CSS</strong> (estilo) y <strong>JavaScript</strong> (interactividad).</li>
+<li>Ejemplo: el formulario de registro o el botón de “Enviar”.</li>
+</ul>
+<h3 id="-backend-lado-del-servidor">⚙️ Backend (lado del servidor)</h3>
+<ul>
+<li>Es la parte que no se ve: se ejecuta en el servidor.</li>
+<li>Procesa las peticiones del cliente, accede a la base de datos y devuelve los resultados.</li>
+<li>Ejemplo: el código que guarda los datos del formulario en la base de datos.</li>
+</ul>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Punto clave</h4>
+
+    El <strong>frontend</strong> muestra y recoge información del usuario,<br>
+mientras que el <strong>backend</strong> la procesa, almacena y devuelve resultados.
+
+</div>
+
+<hr>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Aspecto</th>
+          <th style="text-align: left">Frontend (cliente)</th>
+          <th style="text-align: left">Backend (servidor)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Dónde se ejecuta</strong></td>
+          <td style="text-align: left">En el navegador del usuario</td>
+          <td style="text-align: left">En el servidor web</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Lenguajes habituales</strong></td>
+          <td style="text-align: left">HTML, CSS, JavaScript, Vue, React</td>
+          <td style="text-align: left">PHP, Python, Node.js, Java</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Función principal</strong></td>
+          <td style="text-align: left">Mostrar la interfaz y captar datos del usuario</td>
+          <td style="text-align: left">Procesar datos y comunicarse con la base de datos</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Ejemplo práctico</strong></td>
+          <td style="text-align: left">Formulario de contacto en pantalla</td>
+          <td style="text-align: left">Código que guarda el mensaje en una base de datos</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Resultado visible</strong></td>
+          <td style="text-align: left">Sí, el usuario lo ve directamente</td>
+          <td style="text-align: left">No, solo devuelve una respuesta</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="una-metáfora-el-restaurante-web">Una metáfora: el restaurante web</h2>
+<p>Imagina que una aplicación web funciona como un restaurante (🍽️):</p>
+<ul>
+<li>
+<p>El <strong>cliente (frontend)</strong> es la <strong>mesa del comensal</strong>, con todo lo que el usuario ve e interactúa:<br>
+la carta, los cubiertos, el plato servido, el salero o las vinagreras.<br>
+Es el lugar donde el usuario decide qué quiere hacer y cómo ajustar su experiencia.</p>
+</li>
+<li>
+<p>El <strong>servidor (backend)</strong> es la <strong>cocina del restaurante</strong>.<br>
+Allí los cocineros preparan los platos según los pedidos recibidos, mezclan los ingredientes (los datos),<br>
+y devuelven el resultado terminado al cliente.</p>
+</li>
+</ul>
+<p><strong>El proceso completo:</strong></p>
+<blockquote>
+<p>El comensal (usuario) hace un pedido → el camarero (navegador) lo lleva a la cocina (servidor) →<br>
+los cocineros (backend) preparan el plato → lo devuelven a la mesa →<br>
+y el cliente puede añadir más sal o vinagre (interacciones frontend).</p></blockquote>
+<hr>
+<h2 id="-siguiendo-con-la-metáfora">🍳 Siguiendo con la metáfora</h2>
+<ul>
+<li>
+<p><strong>Frontend</strong> → la experiencia visible e interactiva (presentación).<br>
+<em>“El plato, la mesa, los utensilios, el salero y lo que el usuario toca.”</em></p>
+</li>
+<li>
+<p><strong>Backend</strong> → el trabajo oculto que genera el contenido (lógica y datos).<br>
+<em>“La cocina donde se preparan los platos según el pedido.”</em></p>
+</li>
+<li>
+<p><strong>Base de datos</strong> → la despensa donde se guardan los ingredientes.<br>
+<em>“Lugar donde se almacenan los productos (datos) para cocinar los platos.”</em></p>
+</li>
+<li>
+<p><strong>HTTP / navegador</strong> → el camarero que transporta la información.<br>
+<em>“Lleva los pedidos (peticiones) y devuelve las respuestas.”</em></p>
+</li>
+</ul>
+<h2 id="conclusión">Conclusión</h2>
+<p>La arquitectura web permite que <strong>cliente, servidor y base de datos trabajen juntos</strong> para ofrecer una experiencia completa al usuario.</p>
+<p>En los siguientes temas aprenderemos a construir paso a paso cada parte:</p>
+<ul>
+<li>cómo se estructura la información (<strong>HTML, CSS, JS</strong>),</li>
+<li>cómo se procesa en el servidor (<strong>PHP, Node.js, Python (Django)</strong>),</li>
+<li>y cómo se almacena (<strong>bases de datos: Mysql, MongDB</strong>).</li>
+</ul>
+<p>Todo forma parte del mismo edificio: <strong>una aplicación web.</strong></p>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Esquema del Proceso de Solicitud de una Página Web
+
+
+</span>
+</strong>
+
+<ol>
+<li><strong>Navegador del cliente</strong>:</li>
+</ol>
+<ul>
+<li>El usuario introduce una URL en el navegador web (ejemplo: <code>www.ejemplo.com</code>).</li>
+</ul>
+<ol start="2">
+<li><strong>Consulta DNS</strong>:</li>
+</ol>
+<ul>
+<li>El navegador envía una solicitud al <strong>servidor DNS</strong> para obtener la dirección IP correspondiente al nombre de dominio.</li>
+</ul>
+<ol start="3">
+<li><strong>Petición HTTP/HTTPS</strong>:</li>
+</ol>
+<ul>
+<li>El navegador realiza una solicitud <strong>HTTP/HTTPS</strong> a la dirección IP obtenida, pidiendo el recurso (una página web, archivo, etc.).</li>
+</ul>
+<ol start="4">
+<li><strong>Servidor Web</strong>:</li>
+</ol>
+<ul>
+<li>El <strong>servidor web</strong> (como Apache o Nginx) recibe la solicitud y verifica el recurso solicitado.</li>
+</ul>
+<ol start="5">
+<li><strong>Servidor de Aplicaciones</strong> (si aplica):</li>
+</ol>
+<ul>
+<li>Si la página requiere procesamiento dinámico (PHP, Java, Python, etc.), el <strong>servidor de aplicaciones</strong> genera el contenido necesario.</li>
+</ul>
+<ol start="6">
+<li><strong>Servidor de Bases de Datos</strong> (si aplica):</li>
+</ol>
+<ul>
+<li>Si es necesario, el servidor de aplicaciones consulta el <strong>servidor de bases de datos</strong> para obtener datos (ejemplo: contenido de un blog, productos de una tienda).</li>
+</ul>
+<ol start="7">
+<li><strong>Respuesta del Servidor</strong>:</li>
+</ol>
+<ul>
+<li>El servidor web envía el contenido solicitado de vuelta al navegador, ya sea una página estática o dinámica.</li>
+</ul>
+<ol start="8">
+<li><strong>Renderizado en el Navegador</strong>:</li>
+</ol>
+<ul>
+<li>El navegador interpreta el HTML, CSS y JavaScript recibidos, y muestra la página al usuario.</li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Nota</h4>
+
+    <ul>
+<li><strong>Caché</strong>: Dependiendo de la configuración, el navegador o un servicio intermedio (CDN, caché del servidor) puede almacenar una copia temporal del recurso para acelerar solicitudes futuras.</li>
+</ul>
+
+
+</div>
+
+<h3 id="-diagrama-del-proceso-de-carga-de-una-página-web">🌐 Diagrama del proceso de carga de una página web</h3>
+<pre class="mermaid">sequenceDiagram
+participant U as 🧑‍💻 Usuario (Navegador)
+participant D as 🌍 Servidor DNS
+participant W as 🖥️ Servidor Web
+participant A as ⚙️ Servidor de Aplicaciones
+participant B as 💾 Base de Datos
+
+    U-&gt;&gt;D: 1️⃣ Solicita IP de www.ejemplo.com
+    D--&gt;&gt;U: Devuelve dirección IP
+
+    U-&gt;&gt;W: 2️⃣ Envía petición HTTP/HTTPS al servidor web
+    W--&gt;&gt;U: Si el recurso es estático (HTML, imagen...), lo envía directamente
+
+    W-&gt;&gt;A: 3️⃣ Si es recurso dinámico, reenvía al servidor de aplicaciones
+    A-&gt;&gt;B: 4️⃣ Consulta datos en la base de datos (SQL)
+    B--&gt;&gt;A: Devuelve resultados
+    A--&gt;&gt;W: Genera contenido dinámico (HTML, JSON...)
+    W--&gt;&gt;U: 5️⃣ Envía la respuesta completa al navegador
+
+    U-&gt;&gt;U: 6️⃣ El navegador renderiza HTML, CSS y JS</pre>
+
+
+<div class="alert alert-info" role="alert">
+<h4 class="alert-heading">Resumen del proceso</h4>
+
+    1️⃣ El usuario introduce una URL →<br>
+2️⃣ Se resuelve la IP mediante DNS →<br>
+3️⃣ El navegador envía una petición HTTP/HTTPS →<br>
+4️⃣ El servidor web atiende o pasa la petición al servidor de aplicaciones →<br>
+5️⃣ Si es necesario, se consulta la base de datos →<br>
+6️⃣ El servidor genera y devuelve la respuesta →<br>
+7️⃣ El navegador muestra la página renderizada.
+
+</div>
+
+
+<details title="Ampliar: tipos de servidores e infraestructura">
+  <summary>Details</summary>
+  <p><em>(Contenido avanzado, útil para cuando se estudie despliegue e infraestructura web.)</em></p>
+<ul>
+<li><strong>Servidores Web:</strong> gestionan contenido estático o dinámico.</li>
+<li><strong>Servidores de Aplicaciones:</strong> ofrecen servicios a programas (seguridad, balanceo, sesiones…).</li>
+<li><strong>Servidores de Bases de Datos:</strong> almacenan y sirven datos (MySQL, MongoDB…).</li>
+<li><strong>Proxies:</strong> actúan como intermediarios (directos o inversos).</li>
+<li><strong>DNS:</strong> traducen nombres de dominio en direcciones IP.</li>
+</ul>
+</details>
+
+<hr>
+
+	<div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+    <a target="_blank" rel="noopener" href="mailto:manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script type="module" async>
+  import mermaid from "https:\/\/cdn.jsdelivr.net\/npm\/mermaid@latest\/dist\/mermaid.esm.min.mjs";
+
+  (function ($) {
+    if ($('.mermaid').length == 0) {
+      mermaid.initialize({ startOnLoad: false });
+      return;
+    }
+
+    var params = {};
+
+    
+    
+    var norm = function (defaultConfig, params) {
+      var result = {};
+      for (const key in defaultConfig) {
+        const keyLower = key.toLowerCase();
+        if (defaultConfig.hasOwnProperty(key) && params.hasOwnProperty(keyLower)) {
+          if (typeof defaultConfig[key] === "object") {
+            result[key] = norm(defaultConfig[key], params[keyLower]);
+          } else {
+            result[key] = params[keyLower];
+          }
+        }
+      }
+      return result;
+    };
+
+    var settings = norm(mermaid.mermaidAPI.defaultConfig, params);
+    settings.startOnLoad = true;
+    if ($('html[data-bs-theme="dark"]').length) {
+      settings.theme = 'dark';
+    }
+    mermaid.initialize(settings);
+
+    
+    const lightDarkModeThemeChangeHandler = function (mutationsList, observer) {
+      for (const mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'data-bs-theme') {
+          
+          
+          
+          location.reload();
+        }
+      }
+    };
+
+    const observer = new MutationObserver(lightDarkModeThemeChangeHandler);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-bs-theme']
+    });
+    
+
+  })(jQuery);
+</script>
+<script src="/certificado/web/js/main.js"></script>
+<script defer src="/certificado/web/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/certificado/web/js/tabpane-persist.js'></script>
+
+  </body>
+</html>
