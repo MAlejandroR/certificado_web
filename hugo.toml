@@ -84,8 +84,10 @@ contentDir = "content/fr"
 custom_css=['/css/custom.css']
 copyright = "@MRomero"
 privacy_policy = "https://policies.google.com/privacy"
-
 logo= "/images/logo.png"
+#URL Para la página de inicio
+brandURL="https://web.infenlaces.com/certificado"
+
 [params.ui]
 showLightDarkModeMenu = true
 sidebar_menu_compact = true

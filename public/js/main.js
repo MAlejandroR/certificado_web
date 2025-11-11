@@ -6407,7 +6407,7 @@ limitations under the License.
           }
 
           var query = $(this).val();
-          var searchPage = 'http://localhost:1313/certificado/web/search/?q=' + query;
+          var searchPage = 'http://localhost:35375/certificado/web/search/?q=' + query;
           document.location = searchPage;
 
           return false;
